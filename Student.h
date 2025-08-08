@@ -1,4 +1,5 @@
 #ifndef STUDENT_H
+#define STUDENT_H
 #include <vector>
 #include <string>
 using namespace std;
@@ -7,15 +8,21 @@ class Student {
 
     public:
 
-        string ReadStudentCSV(string ID, string lastName, string firstName);
-        string UpdateStudentCSV(string ID, string lastName, string firstName);
+        Student();  // Constructor
+        Student(string ID, string lastName, string firstName);
 
+        void SetStudent(string ID, string lastName, string firstName);
+        string GetStudentID();
+        string GetStudentLast();
+        string GetStudentFirst();
+        
+        
     private:
 
         string ID;
         string lastName;
         string firstName;
-        vector<Student*>student;
+       static vector<Student*> student;
 
 };
 
