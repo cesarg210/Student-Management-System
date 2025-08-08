@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall
 TARGET = main
-SRC = main.cpp Student.cpp
+SRC = main.cpp Student.cpp StudentManager.cpp
 
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)

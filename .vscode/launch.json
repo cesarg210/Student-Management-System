@@ -1,11 +1,22 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
+
+
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
-      "args": [],
+      "args": [ 
+        "-g",
+        "main.cpp",
+        "classes /Student.cpp",
+        "classes /StudentManager.cpp",
+        "-o",
+        "a.out"
+      
+      ],
       "cwd": "/Users/cesargallegos/Student-Managemet-System",
       "program": "/Users/cesargallegos/Student-Managemet-System/build/Debug/outDebug"
     }
