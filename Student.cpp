@@ -1,9 +1,8 @@
 #include "Student.h"
+#include "StudentManager.h"
 #include <iostream>
-#include <vector>
 #include <string>
-#include <sstream>
-#include <fstream>
+
 using namespace std;
 
 Student::Student() : ID("NA"), lastName("NA"), firstName("NA"){}    // Default Constructor

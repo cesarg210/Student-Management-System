@@ -4,12 +4,18 @@
 #include <string>
 
 using namespace std;
-StudentManager student;
+
 
 int main(){
+    StudentManager studentManager;
+    Student student;
+    studentManager.ReadStudentCSV("Student.csv");
     
-    student.ReadStudentCSV("Student.csv");
-
     cout << "compile success" << endl;
+    studentManager.DisplayStudents();
+
+
+
+
     return 0;
 }
