@@ -5,16 +5,10 @@
 
 using namespace std;
 
-
 int main(){
     StudentManager studentManager;
-    Student student;
     studentManager.ReadStudentCSV("Student.csv");
-    
-    cout << "compile success" << endl;
     studentManager.DisplayStudents();
-
-
 
 
     return 0;
