@@ -1,1 +1,1 @@
-C++ program to read passenger CSV data.
+C++ program to read Student CSV data.
